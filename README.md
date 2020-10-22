@@ -7,6 +7,7 @@ Codes and paper will be availabel soon.
 
 If DSRAN is useful for your research, please cite our paper:
 
+```
 @ARTICLE{9222079,
   author={K. {Wen} and X. {Gu} and Q. {Cheng}},
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
@@ -16,3 +17,4 @@ If DSRAN is useful for your research, please cite our paper:
   number={},
   pages={1-1},
   doi={10.1109/TCSVT.2020.3030656}}
+```
