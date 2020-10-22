@@ -18,3 +18,7 @@ If DSRAN is useful for your research, please cite our paper:
   pages={1-1},
   doi={10.1109/TCSVT.2020.3030656}}
 ```
+
+## License
+
+[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
