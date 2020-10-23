@@ -113,6 +113,15 @@ We recommended the following dependencies.
 
 ## Download data
 
+Download the raw images, pre-computed image features, pre-trained bert models and pre-trained DSRAN models. As for the raw images, they can be downloaded form [VSE++](https://github.com/fartashf/vsepp).
+
+```
+wget http://www.cs.toronto.edu/~faghri/vsepp/data.tar
+wget http://www.cs.toronto.edu/~faghri/vsepp/vocab.tar
+```
+We refer to the path of extracted files for `data.tar` as `$DATA_PATH` while only raw images are use which are `coco` and `f30k`.
+
+For pre-computed image features, they can be obtained from [VLP](https://github.com/LuoweiZhou/VLP).
 ### Data Structure
 ```
 ├── data/
