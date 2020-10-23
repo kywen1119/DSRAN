@@ -3,9 +3,55 @@ This is the official source code for journal paper [Learning Dual Semantic Relat
 
 Codes will be available soon.
 
-**The framework of DSRAN:**
-
-<img src="Fig3.pdf" width = "90%" height="50%">
+**The results on MSCOCO and Flicke30K dataset:(With BERT or GRU)**
+<table>
+  <tr>
+    <td>BERT</td>
+    <td colspan="3">Image-to-Text</td>
+    <td colspan="3">Text-to-Image</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Dataset</td>
+    <td>R@1</td>
+    <td>R@5</td>
+    <td>R@10</td>
+    <td>R@1</td>
+    <td>R@5</td>
+    <td>R@10</td>
+    <td>Rsum</td>
+  </tr>
+  <tr>
+    <td>MSCOCO-1K</td>       
+    <td>80.6</td>
+    <td>96.7</td>
+    <td>98.7</td>
+    <td>64.5</td>
+    <td>90.8</td>
+    <td>95.8</td>
+     <td>527.1</td>
+  </tr>
+  <tr>
+    <td>MSCOCO-5K</td>      
+    <td>57.9</td>
+    <td>85.3</td>
+    <td>92.0</td>
+    <td>41.7</td>
+    <td>72.7</td>
+    <td>82.8</td>
+     <td>432.4</td>
+  </tr>
+  <tr>  
+    <td>Flickr30k</td>      
+    <td>80.5</td>
+    <td>95.5</td>
+    <td>97.9</td>
+    <td>59.2</td>
+    <td>86.0</td>
+    <td>91.9</td>
+    <td>511.0</td>
+  </tr>
+</table>
 
 ## Requirements and Installation
 We recommended the following dependencies.
