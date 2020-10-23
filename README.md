@@ -3,6 +3,15 @@ This is the official source code for journal paper [Learning Dual Semantic Relat
 
 Codes will be available soon.
 
+## Requirements and Installation
+We recommended the following dependencies.
+*  Python 3.6
+*  PyTorch 1.1.0
+*  NumPy (>1.12.1)
+*  torchtext
+*  pycocotools
+*  nltk
+
 ## Reference
 
 If DSRAN is useful for your research, please cite our paper:
