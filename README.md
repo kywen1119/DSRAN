@@ -6,6 +6,55 @@ Codes will be available soon.
 **The results on MSCOCO and Flicke30K dataset:(With BERT or GRU)**
 <table>
   <tr>
+    <td>GRU</td>
+    <td colspan="3">Image-to-Text</td>
+    <td colspan="3">Text-to-Image</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Dataset</td>
+    <td>R@1</td>
+    <td>R@5</td>
+    <td>R@10</td>
+    <td>R@1</td>
+    <td>R@5</td>
+    <td>R@10</td>
+    <td>Rsum</td>
+  </tr>
+  <tr>
+    <td>MSCOCO-1K</td>                   
+    <td>80.4</td>
+    <td>96.7</td>
+    <td>98.7</td>
+    <td>64.2</td>
+    <td>90.4</td>
+    <td>95.8</td>
+     <td>526.2</td>
+  </tr>
+  <tr>
+    <td>MSCOCO-5K</td>      
+    <td>57.6</td>
+    <td>85.6</td>
+    <td>91.9</td>
+    <td>41.5</td>
+    <td>71.9</td>
+    <td>82.1</td>
+     <td>430.6</td>
+  </tr>
+  <tr>  
+    <td>Flickr30k</td>            
+    <td>79.6</td>
+    <td>95.6</td>
+    <td>97.5</td>
+    <td>58.6</td>
+    <td>85.8</td>
+    <td>91.3</td>
+    <td>508.4</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <td>BERT</td>
     <td colspan="3">Image-to-Text</td>
     <td colspan="3">Text-to-Image</td>
