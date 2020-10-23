@@ -113,6 +113,30 @@ We recommended the following dependencies.
 
 ## Download data
 
+### Data Structure
+```
+├── data/
+|   ├── coco/           /* MSCOCO raw images
+|   |   ├── images/
+|   |   |   ├── train2014/
+|   |   |   ├── val2014/
+|   |   ├── annotations/
+|   ├── f30k/           /* Flickr30K raw images
+|   |   ├── images/
+|   |   ├── dataset_flickr30k.json
+|   ├── joint-pretrain/           /* pre-computed image features
+|   |   ├── COCO/
+|   |   |   ├── region_feat_gvd_wo_bgd/
+|   |   |   |   ├── feat_cls_1000/
+|   |   |   |   ├── coco_detection_vg_thresh0.2_feat_gvd_checkpoint_trainvaltest.h5
+|   |   |   ├── annotations/
+|   |   ├── flickr30k/
+|   |   |   ├── region_feat_gvd_wo_bgd/
+|   |   |   |   ├── trainval/
+|   |   |   |   ├── flickr30k_detection_vg_thresh0.2_feat_gvd_checkpoint_trainvaltest.h5
+|   |   |   ├── annotations/
+```
+
 ## Train new models
 
 ## Evaluate trained models
