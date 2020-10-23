@@ -5,7 +5,7 @@ Codes will be available soon.
 
 **The framework of DSRAN:**
 
-<img src="./figures/Fig3.pdf" width = "90%" height="50%">
+<img src="Fig3.pdf" width = "90%" height="50%">
 
 ## Requirements and Installation
 We recommended the following dependencies.
