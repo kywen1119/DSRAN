@@ -113,7 +113,12 @@ We recommended the following dependencies.
 
 ## Download data
 
-## 
+## Train new models
+
+## Evaluate trained models
+
+## Acknowledgement
+
 ## Reference
 
 If DSRAN is useful for your research, please cite our paper:
