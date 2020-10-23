@@ -3,6 +3,10 @@ This is the official source code for journal paper [Learning Dual Semantic Relat
 
 Codes will be available soon.
 
+**The framework of DSRAN:**
+
+<img src="./figures/Fig3.pdf" width = "90%" height="50%">
+
 ## Requirements and Installation
 We recommended the following dependencies.
 *  Python 3.6
@@ -12,6 +16,9 @@ We recommended the following dependencies.
 *  pycocotools
 *  nltk
 
+## Download data
+
+## 
 ## Reference
 
 If DSRAN is useful for your research, please cite our paper:
