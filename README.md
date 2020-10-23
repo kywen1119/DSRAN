@@ -121,7 +121,7 @@ wget http://www.cs.toronto.edu/~faghri/vsepp/vocab.tar
 ```
 We refer to the path of extracted files for `data.tar` as `$DATA_PATH` while only raw images are used which are `coco` and `f30k`.
 
-For pre-computed image features, they can be obtained from [VLP](https://github.com/LuoweiZhou/VLP).
+For pre-computed image features, they can be obtained from [VLP](https://github.com/LuoweiZhou/VLP). These zip files should be extracted into the fold `data/joint-pretrain`. 
 
 Pre-trained ResNet152 model can be downloaded from [torchvision](https://download.pytorch.org/models/resnet152-b121ed2d.pth) and put in the root directory.
 
