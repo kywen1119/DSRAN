@@ -164,6 +164,48 @@ Pre-trained BERT models are obtained form an old version of [transformers](https
 
 ## Evaluate trained models
 
+### Test on single model:
+
++ Test on MSCOCO dataset (1K and 5K simultaneously):
+  + Test on BERT-based models:
+  ```bash
+  python evaluation_bert.py --model BERT/cc_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
+  ```
+  + Test on GRU-based models:
+  ```bash
+  python evaluation_bert.py --model GRU/cc_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
+  ```
++ Test on Flickr30K dataset:
+  + Test on BERT-based models:
+  ```bash
+  python evaluation_bert.py --model BERT/f_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
+  ```
+  + Test on GRU-based models:
+  ```bash
+  python evaluation_bert.py --model GRU/f_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
+  ```
+
+### Test on two-models ensemble and re-rank:
+/* Remember to modify the "$DATA_PATH", "$REGION_BBOX_FILE" and "$FEATURE_PATH" in the .sh files.
++ Test on MSCOCO dataset (1K and 5K simultaneously):
+  + Test on BERT-based models:
+  ```bash
+  sh test_bert_cc.sh
+  ```
+  + Test on GRU-based models:
+  ```bash
+  sh test_gru_cc.sh
+  ```
++ Test on Flickr30K dataset:
+  + Test on BERT-based models:
+  ```bash
+  sh test_bert_f.sh
+  ```
+  + Test on GRU-based models:
+  ```bash
+  sh test_gru_f.sh
+  ```
+  
 ## Acknowledgement
 We thank [Linyang Li](https://github.com/LinyangLee) for the help with the code and provision of some computing resources.
 ## Reference
