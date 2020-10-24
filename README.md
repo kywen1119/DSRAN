@@ -3,6 +3,10 @@ This is the official source code for **Dual Semantic Relations Attention Network
 
 Codes will be available soon.
 
+**The framework of CVSE:**
+
+<img src="./figures/model.jpg" width = "90%" height="50%">
+
 **The results on MSCOCO and Flicke30K dataset:(With BERT or GRU)**
 <table>
   <tr>
