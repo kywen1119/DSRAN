@@ -173,7 +173,7 @@ Pre-trained BERT models are obtained form an old version of [transformers](https
   ```
   + Test on GRU-based models:
   ```bash
-  python evaluation_bert.py --model GRU/cc_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
+  python evaluation.py --model GRU/cc_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
   ```
 + Test on Flickr30K dataset:
   + Test on BERT-based models:
@@ -182,7 +182,7 @@ Pre-trained BERT models are obtained form an old version of [transformers](https
   ```
   + Test on GRU-based models:
   ```bash
-  python evaluation_bert.py --model GRU/f_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
+  python evaluation.py --model GRU/f_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
   ```
 
 ### Test on two-models ensemble and re-rank:
