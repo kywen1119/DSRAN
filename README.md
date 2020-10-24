@@ -160,52 +160,96 @@ Pre-trained BERT models are obtained form an old version of [transformers](https
 |   |   |   ├── annotations/
 ```
 
-## Train new models
-
 ## Evaluate trained models
 
 ### Test on single model:
 
 + Test on MSCOCO dataset (1K and 5K simultaneously):
+
   + Test on BERT-based models:
+  
   ```bash
   python evaluation_bert.py --model BERT/cc_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
   ```
+  
   + Test on GRU-based models:
+  
   ```bash
   python evaluation.py --model GRU/cc_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
   ```
+  
 + Test on Flickr30K dataset:
+
   + Test on BERT-based models:
+  
   ```bash
   python evaluation_bert.py --model BERT/f_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
   ```
+  
   + Test on GRU-based models:
+  
   ```bash
   python evaluation.py --model GRU/f_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
   ```
 
 ### Test on two-models ensemble and re-rank:
+
 /* Remember to modify the "$DATA_PATH", "$REGION_BBOX_FILE" and "$FEATURE_PATH" in the .sh files.
+
 + Test on MSCOCO dataset (1K and 5K simultaneously):
+
   + Test on BERT-based models:
+  
   ```bash
   sh test_bert_cc.sh
   ```
+  
   + Test on GRU-based models:
+  
   ```bash
   sh test_gru_cc.sh
   ```
+  
 + Test on Flickr30K dataset:
+
   + Test on BERT-based models:
+  
   ```bash
   sh test_bert_f.sh
   ```
+  
   + Test on GRU-based models:
+  
   ```bash
   sh test_gru_f.sh
   ```
   
+## Train new models
+
+Train a model with BERT on MSCOCO:
+
+```bash
+python train_bert.py --data_path "$DATA_PATH" --data_name coco --num_epochs 18 --batch_size 320 --lr_update 9 --logger_name runs/cc_bert --bert_path "$BERT_PATH" --ft_bert --warmup 0.1 --K 4 --feature_path "$FEATURE_PATH" --region_bbox_file "$REGION_BBOX_FILE"
+```
+
+Train a model with BERT on Flickr30K:
+
+```bash
+python train_bert.py --data_path "$DATA_PATH" --data_name f30k --num_epochs 12 --batch_size 128 --lr_update 6 --logger_name runs/f_bert --bert_path "$BERT_PATH" --ft_bert --warmup 0.1 --K 2 --feature_path "$FEATURE_PATH" --region_bbox_file "$REGION_BBOX_FILE"
+```
+
+Train a model with GRU on MSCOCO:
+
+```bash
+python train.py --data_path "$DATA_PATH" --data_name coco --num_epochs 18 --batch_size 300 --lr_update 9 --logger_name runs/cc_gru --use_restval --K 2 --feature_path "$FEATURE_PATH" --region_bbox_file "$REGION_BBOX_FILE"
+```
+
+Train a model with GRU on Flickr30K:
+
+```bash
+python train.py --data_path "$DATA_PATH" --data_name f30k --num_epochs 16 --batch_size 128 --lr_update 8 --logger_name runs/f_gru --use_restval --K 2 --feature_path "$FEATURE_PATH" --region_bbox_file "$REGION_BBOX_FILE"
+```
+
 ## Acknowledgement
 We thank [Linyang Li](https://github.com/LinyangLee) for the help with the code and provision of some computing resources.
 ## Reference
