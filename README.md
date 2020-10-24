@@ -146,13 +146,13 @@ Pre-trained BERT models are obtained form an old version of [transformers](https
 |   ├── joint-pretrain/           /* pre-computed image features
 |   |   ├── COCO/
 |   |   |   ├── region_feat_gvd_wo_bgd/
-|   |   |   |   ├── feat_cls_1000/
-|   |   |   |   ├── coco_detection_vg_thresh0.2_feat_gvd_checkpoint_trainvaltest.h5
+|   |   |   |   ├── feat_cls_1000/           $FEATURE_PATH
+|   |   |   |   ├── coco_detection_vg_thresh0.2_feat_gvd_checkpoint_trainvaltest.h5 $REGION_BBOX_FILE
 |   |   |   ├── annotations/
 |   |   ├── flickr30k/
 |   |   |   ├── region_feat_gvd_wo_bgd/
-|   |   |   |   ├── trainval/
-|   |   |   |   ├── flickr30k_detection_vg_thresh0.2_feat_gvd_checkpoint_trainvaltest.h5
+|   |   |   |   ├── trainval/                $FEATURE_PATH
+|   |   |   |   ├── flickr30k_detection_vg_thresh0.2_feat_gvd_checkpoint_trainvaltest.h5 $REGION_BBOX_FILE
 |   |   |   ├── annotations/
 ```
 
