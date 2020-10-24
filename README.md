@@ -121,15 +121,17 @@ wget http://www.cs.toronto.edu/~faghri/vsepp/vocab.tar
 ```
 We refer to the path of extracted files for `data.tar` as `$DATA_PATH` while only raw images are used which are `coco` and `f30k`.
 
-For pre-computed image features, they can be obtained from [VLP](https://github.com/LuoweiZhou/VLP). These zip files should be extracted into the fold `data/joint-pretrain`. 
+For pre-computed image features, they can be obtained from [VLP](https://github.com/LuoweiZhou/VLP). These zip files should be extracted into the fold `data/joint-pretrain`. We refer to the path of extracted `region_bbox_file(.h5)` as `$REGION_BBOX_FILE` and regional feature paths `feat_cls_1000/` for COCO and `trainval/` for FLICKR30K as `$FEATURE_PATH`.
 
 Pre-trained ResNet152 model can be downloaded from [torchvision](https://download.pytorch.org/models/resnet152-b121ed2d.pth) and put in the root directory.
-
-For our trained DSRAN models, you can download `runs.zip` on [Google Drive](https://drive.google.com/drive/folders/1SQiRpO3L8d9QxFSRdk31PZrxRUi3eXyW?usp=sharing) or `GRU.zip` together with `BERT.zip` on [BaiduNetDisk](https://pan.baidu.com/s/1H_iMH-QZETAdHLk03dBREA)(extract code:1119)
-
 ```
 wget https://download.pytorch.org/models/resnet152-b121ed2d.pth
 ```
+For our trained DSRAN models, you can download `runs.zip` on [Google Drive](https://drive.google.com/drive/folders/1SQiRpO3L8d9QxFSRdk31PZrxRUi3eXyW?usp=sharing) or `GRU.zip` together with `BERT.zip` on [BaiduNetDisk](https://pan.baidu.com/s/1H_iMH-QZETAdHLk03dBREA)(extract code:1119). There are totally 8 models (4 for each dataset).
+
+Pre-trained BERT models are obtained form an old version of [transformers](https://github.com/huggingface/transformers). It is noticed that there's a simpler way of using BERT as seen in [transformers](https://github.com/huggingface/transformers). We'll update the code in the future. The pre-trained models we used can be downloaded from the same [Google Drive](https://drive.google.com/drive/folders/1SQiRpO3L8d9QxFSRdk31PZrxRUi3eXyW?usp=sharing) and [BaiduNetDisk](https://pan.baidu.com/s/1H_iMH-QZETAdHLk03dBREA)(extract code:1119) links. We refer to the path of extracted files for `uncased_L-12_H-768_A-12.zip` as `$BERT_PATH`.  
+
+
 ### Data Structure
 ```
 ├── data/
