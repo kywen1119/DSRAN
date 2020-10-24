@@ -165,7 +165,7 @@ Pre-trained BERT models are obtained form an old version of [transformers](https
 ## Evaluate trained models
 
 ## Acknowledgement
-
+We thank [Linyang Li](https://github.com/LinyangLee) for the help with the code and provision of some computing resources.
 ## Reference
 
 If DSRAN is useful for your research, please cite our paper:
