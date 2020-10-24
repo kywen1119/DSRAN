@@ -125,6 +125,8 @@ For pre-computed image features, they can be obtained from [VLP](https://github.
 
 Pre-trained ResNet152 model can be downloaded from [torchvision](https://download.pytorch.org/models/resnet152-b121ed2d.pth) and put in the root directory.
 
+For our trained DSRAN models, you can download `runs.zip` on [Google Drive](https://drive.google.com/drive/folders/1SQiRpO3L8d9QxFSRdk31PZrxRUi3eXyW?usp=sharing) or `GRU.zip` together with `BERT.zip` on [BaiduNetDisk](https://pan.baidu.com/s/1H_iMH-QZETAdHLk03dBREA)(extract code:1119)
+
 ```
 wget https://download.pytorch.org/models/resnet152-b121ed2d.pth
 ```
