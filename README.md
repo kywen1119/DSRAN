@@ -182,13 +182,13 @@ Pre-trained BERT models are obtained form an old version of [transformers](https
   + Test on BERT-based models:
   
   ```bash
-  python evaluation_bert.py --model BERT/f_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
+  python evaluation_bert.py --model BERT/f_model1 --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
   ```
   
   + Test on GRU-based models:
   
   ```bash
-  python evaluation.py --model GRU/f_model1 --fold --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
+  python evaluation.py --model GRU/f_model1 --data_path "$DATA_PATH" --region_bbox_file "$REGION_BBOX_FILE" --feature_path "$FEATURE_PATH"
   ```
 
 ### Test on two-models ensemble and re-rank:
