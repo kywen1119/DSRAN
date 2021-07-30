@@ -257,13 +257,13 @@ If DSRAN is useful for your research, please cite our paper:
 
 ```
 @ARTICLE{9222079,
-  author={K. {Wen} and X. {Gu} and Q. {Cheng}},
+  author={Wen, Keyu and Gu, Xiaodong and Cheng, Qingrong},
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
-  title={Learning Dual Semantic Relations with Graph Attention for Image-Text Matching}, 
-  year={2020},
-  volume={},
-  number={},
-  pages={1-1},
+  title={Learning Dual Semantic Relations With Graph Attention for Image-Text Matching}, 
+  year={2021},
+  volume={31},
+  number={7},
+  pages={2866-2879},
   doi={10.1109/TCSVT.2020.3030656}}
 ```
 
