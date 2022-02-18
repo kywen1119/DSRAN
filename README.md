@@ -6,7 +6,7 @@ This is the official source code for **Dual Semantic Relations Attention Network
 
 <img src="./figures/model.jpg" width = "100%" height="50%">
 
-**The results on MSCOCO and Flicke30K dataset:(With BERT or GRU)**
+**The results on MSCOCO and Flickr30K dataset:(With BERT or GRU)**
 <table>
   <tr>
     <td>GRU</td>
